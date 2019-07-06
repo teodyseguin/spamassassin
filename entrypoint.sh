@@ -23,9 +23,15 @@ if [ -z "$ALLOWED_IP_RANGES" ]; then
   exit 1
 fi
 
+if [ -z "$REQUIRED_SCORE" ]; then
+  echo "SA required_score is not set."
+  echo "Set required_score to default 10.0"
+  REQUIRED_SCORE=10.0
+fi
+
 cat <<EOT > /etc/spamassassin/local.cf
 
-required_score 10.0
+required_score $REQUIRED_SCORE
 
 use_pyzor 1
 
