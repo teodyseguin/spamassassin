@@ -12,7 +12,8 @@ ENV BAYES_ADDRESS=BayesDatabase \
     MIN_CHILDREN=1 \
     MAX_CHILDREN=5 \
     MIN_SPARE=1 \
-    MAX_SPARE=2
+    MAX_SPARE=2 \
+    REQUIRED_SCORE=10.0
 
 RUN mkdir -p /nonexistent/.pyzor/ && chown -R nobody:nogroup /nonexistent
 
