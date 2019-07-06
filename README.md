@@ -56,6 +56,8 @@ This option specifies the maximum number of children to spawn. The minimum value
 The lower limit for the number of spare children allowed to run. The default value is 1.
 ## ```MAX_SPARE```
 The upper limit for the number of spare children allowed to run. The default value is 2.
+## ```REQUIRED_SCORE```
+The required score by spamassassin to pass the test. The default is 10.0.
 ### Note, more information
 For more information and related downloads for SpamAssassin, please visit http://spamassassin.apache.org/.
 
